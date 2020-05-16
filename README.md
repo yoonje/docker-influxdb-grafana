@@ -1,6 +1,6 @@
 # Influxdb Grafana for Guider
 
-#### Version
+## Version
 ```
 Docker Image: 2.3.0
 Ubuntu: 18.04
@@ -8,7 +8,7 @@ InfluxDB: 1.7.10
 Grafana: 6.6.2
 ```
 
-#### Run
+## Run
 * Start container
   * Method 1: Use DockerHub
   ```sh
@@ -44,13 +44,13 @@ docker stop guider-visualization
 docker start guider-visualization
 ```
 
-#### Port Forwarding
+## Port Forwarding
 |Host|Container|Service|
 |:---:|:---:|:---:|
 |3003|3003|grafana|
 |8086|8086|influxdb|
 
-#### Grafana
+## Grafana
 Open <http://localhost:3003>
 ```
 Username: root
