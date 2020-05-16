@@ -1,4 +1,4 @@
-# Influxdb Grafana for Guider
+# InfluxDB Grafana for Guider
 
 ## Version
 ```
