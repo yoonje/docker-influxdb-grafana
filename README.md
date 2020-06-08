@@ -1,4 +1,4 @@
-# InfluxDB Grafana for Guider
+# Docker InfluxDB Grafana
 
 ## Version
 ```
