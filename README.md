@@ -10,38 +10,25 @@ Grafana: 6.6.2
 
 ## Run
 * Start container
-  * Method 1: Use DockerHub
-  ```sh
-  docker pull yoonje/guider-influxdb-grafana
-  ```
-  ```sh  
-  docker run --ulimit nofile=66000:66000 \
-    -d \
-    --name guider-visualization \
-    -p 3003:3003 \
-    -p 8086:8086 \
-  yoonje/guider-influxdb-grafana
-  ```
-  * Method 2: Build in local environment
-  ```sh
-  docker build -t guider-influxdb-grafana .
-  ```
-  ```sh  
-  docker run --ulimit nofile=66000:66000 \
-    -d \
-    --name guider-visualization \
-    -p 3003:3003 \
-    -p 8086:8086 \
-  guider-influxdb-grafana
-  ```
+```sh
+$ docker build -t influxdb-grafana .
+```
+```sh  
+$ docker run --ulimit nofile=66000:66000 \
+  -d \
+  --name influxdb-grafana \
+  -p 3003:3003 \
+  -p 8086:8086 \
+influxdb-grafana
+```
   
 * Stop container
 ```sh
-docker stop guider-visualization
+$ docker stop influxdb-grafana
 ```
 * Restart container
 ```sh
-docker start guider-visualization
+$ docker start influxdb-grafana
 ```
 
 ## Port Forwarding
